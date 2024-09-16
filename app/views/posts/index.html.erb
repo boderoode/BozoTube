@@ -1,0 +1,51 @@
+<style>
+.no-underline {
+  text-decoration: none; /* Remove the underline */
+  color: inherit; /* Inherit color from parent button (prevents default blue color) */
+}
+
+.btn-small {
+  padding: 2px 4px;  
+  font-size: 14px;   
+  line-height: 2;    
+  width: 40px; 
+  margin-right: 325px;
+}
+
+</style>
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Posts" %>
+
+
+<div id="posts">
+  <% @posts.each do |post| %>
+    <%= render post %>
+    <p>
+      <%= link_to "Show this post", post %>
+    </p>
+  <% end %>
+</div>
+
+<div style="text-align: right; mr-3">
+  <button class="btn btn-success btn-small">
+    <%= link_to "+", new_post_path, class: "no-underline" %>
+  </button>
+</div>
+
+
+<div class="container-md">
+  <p class="mt-3">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod euismod viverra. Vestibulum faucibus rutrum mattis. Aliquam erat volutpat. Nulla et ornare felis. Vivamus et arcu eget velit tempus efficitur. Duis tempus dictum odio nec mollis. Curabitur ac aliquet felis. In nec sagittis elit, et feugiat arcu. Quisque sodales molestie eleifend. Curabitur vitae neque eu diam cursus faucibus quis et sem. Praesent placerat purus nec massa sagittis, nec convallis purus commodo. Praesent viverra porttitor dolor ut eleifend. Sed finibus eu est sed feugiat. Proin sed urna id augue varius fringilla. Morbi pulvinar posuere justo, condimentum commodo lectus imperdiet sit amet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Suspendisse volutpat risus ac lacus aliquam fringilla. Vivamus mattis ac quam in auctor. Donec nec est iaculis, vehicula risus varius, faucibus mauris. Ut in feugiat libero. Sed scelerisque nisi vitae placerat consequat. Curabitur eu lorem a quam rhoncus lacinia. Nullam tincidunt elit id ligula tempus, sit amet ullamcorper ante iaculis. Phasellus at lacus nisi. Vestibulum ut dui imperdiet, varius ligula tristique, rhoncus arcu.
+
+Duis risus ipsum, consectetur in neque vel, tempor ultrices nunc. Vestibulum consequat tortor rhoncus commodo tempus. Pellentesque finibus porta arcu, ut ultricies nulla lobortis vulputate. Praesent nisl est, rutrum sit amet tincidunt vitae, rhoncus vitae ex. Morbi id interdum lectus, non dapibus eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum sed aliquet dui. Duis faucibus faucibus maximus. Nulla maximus tincidunt quam, maximus consequat lorem fermentum ac. Vivamus viverra ante felis. Nunc at libero ligula. Fusce sed hendrerit est. Aenean auctor orci at nibh maximus fringilla. Cras ornare, enim ac luctus suscipit, odio erat euismod elit, quis feugiat tellus libero quis mauris. Aliquam erat volutpat. Fusce consectetur enim sed mi vestibulum, quis dapibus diam suscipit.
+
+Vestibulum scelerisque lorem quis laoreet volutpat. Curabitur fringilla augue viverra erat sollicitudin, non facilisis leo vulputate. Aliquam finibus gravida massa et rhoncus. Nulla facilisi. Donec sit amet pellentesque arcu, in eleifend diam. Donec a dapibus lectus. Aliquam tellus libero, faucibus sed sem in, malesuada laoreet libero. Etiam ornare nisl quis feugiat egestas. Nulla sit amet nunc mattis, blandit arcu eu, tempus lacus. Suspendisse ut finibus felis, ac sodales sapien.
+
+Mauris metus turpis, hendrerit interdum tristique vel, varius sed felis. Phasellus feugiat aliquam ligula, non blandit nisi imperdiet ut. Etiam viverra sit amet tortor nec facilisis. Vivamus sit amet rutrum erat. Nullam suscipit pharetra fermentum. Aliquam vehicula eleifend lectus, sit amet sollicitudin odio scelerisque a. Mauris tempor, ligula sit amet interdum facilisis, sem purus interdum ante, eu dapibus metus massa tincidunt tellus. Nulla volutpat, ante ac interdum tempus, dui sapien sodales nibh, a iaculis mi mauris id sem. Aenean ut faucibus leo. Nulla eget rhoncus tellus, at imperdiet risus. Nunc mollis consequat massa, sit amet convallis quam viverra sit amet. Praesent a purus ultrices, eleifend purus id, pellentesque ante. Suspendisse sit amet ligula eu ex euismod vulputate et sed leo. 
+</p>
+  </div>
+

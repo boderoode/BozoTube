@@ -1,0 +1,44 @@
+<style>
+    /* Make the html and body take up full height */
+    html, body {
+      height: 100%;
+    }
+    /* Flexbox layout for the page to push footer to bottom */
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    /* Make the main content grow to fill available space */
+    .content {
+      flex: 1;
+    }
+  </style>
+
+
+  <!-- Sticky Footer Section -->
+  <footer class="footer bg-dark text-light py-4 mt-auto">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>About Us</h5>
+          <p class="text">We provide quality content and services to our users.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text">Home</a></li>
+            <li><a href="#" class="text">Services</a></li>
+            <li><a href="#" class="text">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Contact Us</h5>
+          <p class="text">Email: info@example.com</p>
+          <p class="text-muted">Phone: +123 456 7890</p>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p class="text">&copy; 2024 Your Company. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
